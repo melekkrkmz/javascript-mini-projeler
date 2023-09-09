@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caunter</title>
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50em;
+        }
+        .containar{
+            text-align: center;
+            height: 300px;
+           display: flex;
+           flex-direction: column;
+           width: 250px;
+          justify-content: space-evenly;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <h1>Caunter</h1>
+        <span style="font-size: xx-large;">0</span>
+        <div class="btn-containar">
+            <button  class="btn btn-danger increas">increase</button>
+            <button  class="btn btn-secondary reset">reset</button>
+            <button  class="btn btn-success decrease">decrease</button>
+        </div>
+       
+    </div>
+    
+</body>
+<script>
+
+  const btn=document.querySelectorAll("button")
+  let counter=document.querySelector("span")
+    
+ // span içeriğini sıfıra eşitle  
+   counter.innerText=0
+
+  btn.forEach(e=>{
+    
+    console.log(e.classList[2])
+  e.onclick=()=>{
+    
+    if(e.classList[2]==="increas"){
+        
+       counter.innerText++
+     
+    }
+
+    if(e.classList[2]==="decrease"){
+        
+       counter.innerText--
+     
+    }
+    if(e.classList[2]==="reset"){
+        
+       counter.innerText=0
+     
+    }
+    
+  }
+
+  })
+    
+</script>
+</html>
