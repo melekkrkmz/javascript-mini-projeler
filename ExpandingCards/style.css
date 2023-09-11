@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.containar{
+    display: flex;
+    width: 90%;
+   
+}
+.poster{
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 80vh;
+  flex:0.5;
+}
+
+.poster.active{
+    flex: 5;
+}
