@@ -36,6 +36,10 @@ backBtn.addEventListener("click", () => {
         nextBtn.disabled = false;
         
     }
+
+     if (count === 0) {
+        backBtn.disabled = true;
+    }
    
 
 })
