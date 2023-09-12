@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(41,115,203,1) 100%);
+}
+
+i{
+    position: absolute;
+    transform: translateX(200px);
+    font-size: 40px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.search-containar{
+    position: relative;
+}
+
+input{
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+}
+
+input.active{
+    width: 50px;
+    transition:all 0.3s;
+    padding-left: 50px;
+}
+
+i.active{
+ transform: translateX(8px);
+ transition: all 0.3s;
+
+}
