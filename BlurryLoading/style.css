@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 30px;
+    font-family:system-ui;
+}
+
+/*  width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    !bu kodlar cihazın var sayılan degerinin üzerine işlem yapmak için kullandım 
+    !var sayılan ekrana ek olarak 60px bir alan veriyor
+    !Bu kod, elementin genişliğini görüntüleyici pencerenin genişliğine (viewport width) 60 piksel ekleyerek hesaplar.
+    
+    */
+
+.bacraund{
+    background-image: url(./girl-2696947_1280.jpg);
+    background-repeat: no-repeat;
+    filter: blur(40px);
+    transition: all 5s;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);  
+    top: -60px;
+    left: -30px;
+ 
+}
