@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+}
+
+.container{
+   display: flex;
+   width: 70%;
+   justify-content: space-around;
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 4px solid;
+    cursor: pointer;
+    background-color: white;
+   
+}
+
+.fill{
+    /* bu adress random resim veriyor */
+ background-image: url("https://source.unsplash.com/random/150x150");
+ width: 142px;
+ height: 142px;
+}
+
+.hold{
+    border: 3px solid rgb(225, 179, 179);
+}
+
+.hover{
+    border: dashed 3px rgb(216, 180, 180);
+    background-color: rgb(49, 37, 37);
+}
