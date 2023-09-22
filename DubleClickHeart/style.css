@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui;
+    background-color: #890808;;
+}
+
+.container{
+    height: 420px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img{
+    width: 400px;
+    background-size: cover;
+    height: 300px;
+    cursor: pointer;
+    box-shadow: 3px 10px 10px 10px;
+    background-image: url(./dancer-4516788_640.jpg);
+}
+
+i{
+    color: #890808;
+    font-size: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.cart{
+    position: relative;
+}
+
+.bi.active{
+    display:block;
+    scale: 10px;
+    transition: all 3s;
+}
